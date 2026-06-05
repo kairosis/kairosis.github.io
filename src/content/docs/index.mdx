@@ -1,0 +1,38 @@
+---
+title: Kairosis
+description: Self-hosted event collection and normalization platform.
+template: splash
+hero:
+  tagline: Collect events from anywhere. Normalize them into a single contract. Publish to RabbitMQ.
+  actions:
+    - text: Get Started
+      link: /getting-started/introduction/
+      icon: right-arrow
+    - text: View on GitHub
+      link: https://github.com/pascalwilbrink/kairosis
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## What is Kairosis?
+
+Kairosis is a self-hosted platform that connects to external tools via webhooks, polling, local agents, and device integrations — normalizes every signal into a common `NormalizedEvent` envelope — and publishes it to a RabbitMQ topic exchange.
+
+**One job: collect, normalize, publish.**
+
+<CardGrid>
+  <Card title="Quick Start" icon="rocket">
+    Get Kairosis running locally in minutes. [Installation guide →](/getting-started/installation/)
+  </Card>
+  <Card title="Connectors" icon="puzzle">
+    Connect GitHub, Slack, email, calendar, and more. [Browse connectors →](/connectors/overview/)
+  </Card>
+  <Card title="Architecture" icon="document">
+    Understand the event flow and normalized event schema. [Architecture →](/architecture/overview/)
+  </Card>
+  <Card title="Build a Connector" icon="add-document">
+    Extend Kairosis with your own data sources. [Developer guide →](/connectors/building/)
+  </Card>
+</CardGrid>

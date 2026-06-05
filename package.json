@@ -1,0 +1,20 @@
+{
+  "name": "docs",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "sync-connectors": "node scripts/sync-connectors.mjs",
+    "sync-events": "node scripts/sync-events.mjs",
+    "sync": "npm run sync-connectors && npm run sync-events"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.39.3",
+    "astro": "^6.3.1",
+    "sharp": "^0.34.5"
+  }
+}
